@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "VerifyLibrary.dll",
   "resources": {
-    "hash": "sha256-2ZCJADiyxeCyzH8P/c29bMYOfPwjBS2IAhumSSWMWBo=",
+    "hash": "sha256-Ib+6iSWWwKNMpvvKOWhHWm6zaCe+L+6A8qOSiOX5h9w=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -27,7 +27,7 @@ export const config = /*json-start*/{
       {
         "virtualPath": "System.Runtime.InteropServices.JavaScript.wasm",
         "name": "System.Runtime.InteropServices.JavaScript.wasm",
-        "integrity": "sha256-G8jcf7T4o9j3M+bffXM4cey5TTNb5pLboMG0kEzJqs8="
+        "integrity": "sha256-wHqC9c/KPliHg/KR/QvDL0fZn/6lnxJgNPJAOfMw+BY="
       }
     ],
     "assembly": [
@@ -104,7 +104,7 @@ export const config = /*json-start*/{
       {
         "virtualPath": "VerifyLibrary.wasm",
         "name": "VerifyLibrary.wasm",
-        "integrity": "sha256-bEE3iqZXKcjF2teSkVn8I61m+Unx/SOrJojxHPS8+24="
+        "integrity": "sha256-2EO0Tsmqi+8kG/YOwmOigVfV4qx3k/UIhsb6+PyUiZM="
       }
     ]
   },

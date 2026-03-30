@@ -13,5 +13,6 @@ const exports = await getAssemblyExports(config.mainAssemblyName);
 document.getElementById("verify").onclick = function() {
     var firstName = document.getElementById("firstname").value;
     var lastName = document.getElementById("lastname").value;
-    globalThis.alert(exports.VerifyCode(globalThis.window.location.href, firstName, lastName));
+    var message = exports.RandominantVerify.VerifyCode(globalThis.window.location.href, firstName, lastName);
+    globalThis.alert(message.toString());
 };

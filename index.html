@@ -3,22 +3,28 @@
   <head>
     <title>Randominant Verification Service</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="verify.css">
   </head>
   <body>
-    <h3>Please enter your details as they have appeared in your notification letter...</h3>
-    <div>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname">
-    </div>
-    <p></p>
-    <div>
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname">
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Randominant Verification</h1>
+        </div>
+        <ul>
+            <li><h3>Please enter your details as they have appeared in your notification letter...</h3></li>
+            <li>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname">
+            </li>
+            <p></p>
+            <li>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
+            </li>
+        </ul>
 
-    <button value="Verify" id="verify">
-        <h3>Verify</h3>
-    </button>
+        <input type="button" class="submit" value="Verify" name="submit" id="verify">
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
