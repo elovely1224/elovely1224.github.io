@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>RandominantVerify.Browser</title>
+  <head>
+    <title>Randominant Verification Service</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./app.css" />
-</head>
-
-<body style="margin: 0; overflow: hidden">
-<div id="out">
-    <div class="avalonia-splash">
-        <h2>
-            Randominant Verification Service
-        </h2>
+  </head>
+  <body>
+    <h3>Please enter your details as they have appeared in your notification letter...</h3>
+    <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname">
     </div>
-</div>
-<script type='module' src="./main.js"></script>
-</body>
+    <p></p>
+    <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+    </div>
 
+    <button value="Verify" id="verify">
+        <h3>Verify</h3>
+    </button>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

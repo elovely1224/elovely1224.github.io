@@ -1,13 +1,17 @@
-import { dotnet } from './_framework/dotnet.js'
+// Set up the .NET WebAssembly runtime
+import { dotnet } from './dotnet.js'
 
-const is_browser = typeof window != "undefined";
-if (!is_browser) throw new Error(`Expected to be running in a browser`);
-
-const dotnetRuntime = await dotnet
+// Get exported methods from the .NET assembly
+const { getAssemblyExports, getConfig } = await dotnet
     .withDiagnosticTracing(false)
-    .withApplicationArgumentsFromQuery()
     .create();
 
-const config = dotnetRuntime.getConfig();
+const config = getConfig();
+const exports = await getAssemblyExports(config.mainAssemblyName);
 
-await dotnetRuntime.runMain(config.mainAssemblyName, [globalThis.location.href]);
+// Display the result of the .NET method
+document.getElementById("verify").onclick = function() {
+    var firstName = document.getElementById("firstname").value;
+    var lastName = document.getElementById("lastname").value;
+    globalThis.alert(exports.VerifyCode(globalThis.window.location.href, firstName, lastName));
+};
