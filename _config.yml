@@ -1,0 +1,7 @@
+title: Randominant Verification
+domain: elovely1224.github.io
+url: "https://elovely1224.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  elovely1224
+include:
+    - _framework
+    - _framework/*
