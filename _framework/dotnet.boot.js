@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "VerifyLibrary.dll",
   "resources": {
-    "hash": "sha256-Ib+6iSWWwKNMpvvKOWhHWm6zaCe+L+6A8qOSiOX5h9w=",
+    "hash": "sha256-5/mUo6drpGLwTLZgl2EosvqGDYbcM0ZJL5BoX/+CV04=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -15,14 +15,14 @@ export const config = /*json-start*/{
     "wasmNative": [
       {
         "name": "dotnet.native.wasm",
-        "integrity": "sha256-yDHvVENYCE38N/NdhxZyAMJ2S5wJCag+8Pby3ruZNSw="
+        "integrity": "sha256-7vIhAhAq6H1Z9z6DH4XhDiaEFk0sDFzqdqa+GVFdxg0="
       }
     ],
     "coreAssembly": [
       {
         "virtualPath": "System.Private.CoreLib.wasm",
         "name": "System.Private.CoreLib.wasm",
-        "integrity": "sha256-tw2j3zJsqy6uwgjOU9Y3VoJBl9Fv2Hz/HheMM8D9Ybs="
+        "integrity": "sha256-73VlumKO7oNqn817ZnUjnxKll6QPxnv5zJsLiwAEZyI="
       },
       {
         "virtualPath": "System.Runtime.InteropServices.JavaScript.wasm",
@@ -44,7 +44,7 @@ export const config = /*json-start*/{
       {
         "virtualPath": "System.Collections.Concurrent.wasm",
         "name": "System.Collections.Concurrent.wasm",
-        "integrity": "sha256-MX9GE/4VDMseUC7hagltDhWcfInWgy0NoPYTkPIKkZ0="
+        "integrity": "sha256-r9wOru7d2inVlBaXfhBVKNACuCO1VPm/kTwktkDtDds="
       },
       {
         "virtualPath": "System.Collections.wasm",
@@ -99,12 +99,12 @@ export const config = /*json-start*/{
       {
         "virtualPath": "System.Text.RegularExpressions.wasm",
         "name": "System.Text.RegularExpressions.wasm",
-        "integrity": "sha256-zFjAccjt7WV0KDkPkvlVmdGUBUd4P2a688BCcIzZKU4="
+        "integrity": "sha256-CT6TLu/dQIQPTCN4JXyhch1MqTgkm2Jhikity50IKVA="
       },
       {
         "virtualPath": "VerifyLibrary.wasm",
         "name": "VerifyLibrary.wasm",
-        "integrity": "sha256-2EO0Tsmqi+8kG/YOwmOigVfV4qx3k/UIhsb6+PyUiZM="
+        "integrity": "sha256-LRCoGk4aHjaGkoXzeo35wuhf72YwaUK/YXUNqFE197g="
       }
     ]
   },

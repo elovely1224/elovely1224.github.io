@@ -11,8 +11,7 @@ const exports = await getAssemblyExports(config.mainAssemblyName);
 
 // Display the result of the .NET method
 document.getElementById("verify").onclick = function() {
-    var firstName = document.getElementById("firstname").value;
-    var lastName = document.getElementById("lastname").value;
-    var message = exports.RandominantVerify.VerifyCode(globalThis.window.location.href, firstName, lastName);
+    var nameString = document.getElementById("name").value;
+    var message = exports.RandominantVerify.VerifyCode(globalThis.window.location.href, nameString);
     globalThis.alert(message.toString());
 };
